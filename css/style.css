@@ -1,0 +1,354 @@
+@font-face {
+	src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+	font-family: 'OpenSans';
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+	font-family: 'OpenSans';
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+	font-family: 'OpenSans';
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
+	font-family: 'OpenSans';
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-LightItalic.ttf') format('truetype');
+	font-family: 'Graphik';
+	font-weight: 300;
+	font-style: italic;
+}
+
+body {
+	margin: 0;
+	background: #FAFAFA;;
+
+}
+
+/*header*/
+.header_wrapper {
+	display: flex;
+	min-height: 40px;
+	position: sticky; top: 0;
+	background: rgba(58, 97, 134, .902);
+	margin-bottom: 30px;
+}
+
+.container {
+	display: flex;
+	flex: column;
+	max-width:1240px;
+}
+
+.row {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.col-2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'OpenSans', Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	text-transform: uppercase;
+	background-color: transparent;
+	text-decoration: none;
+	color: #ffffff;
+	transition: ease-out color .15s;
+}
+
+.col-2:hover {
+	color: rgba(196, 196, 196);
+	text-decoration: none;
+}
+
+.head {
+	text-transform:	capitalize;
+	font-size: 1rem;
+}
+
+/*intro*/
+.intro {
+	display: block;
+	text-align: center;
+	padding: 0 2vw;
+}
+
+
+.intro h1 {
+	text-transform: uppercase;
+	font-family: 'OpenSans' Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	font-size: 42px;
+	margin-bottom: 20px;
+
+}
+
+.intro p {
+	max-width: 50%;
+	margin: 0 auto;
+	font-family: 'Graphik' Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	text-transform: capitalize;
+	margin-bottom: 50px;
+}
+
+/*barra centrale*/
+.central_bar {
+	width: 200px;
+	height: 5px;
+	margin: 0 auto;
+	background: #89253e;
+}
+
+/*settori*/
+.sectors_preview h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'OpenSans' Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 42px;
+	margin-bottom: 20px;
+}
+
+.sectors {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 100vw;
+	margin: 0 auto;
+	padding: 0 2vw;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 50px;
+	background: linear-gradient(-45deg, #3a6186, #89253e, #1D2B64);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 10s ease-in-out infinite;
+			animation: gradient 10s ease-in-out infinite;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 50% 100%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 50% 100%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.main_sector {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	max-width: 1560px;
+	margin-bottom: 20px;
+}
+
+.first_sector {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+	width: 30%;
+}
+
+.main_sector h3 {
+	text-transform: uppercase;
+	font-family: 'OpenSans' Helvetica, Arial, sans-serif;;
+	font-weight: 400;
+	width: 100%;
+	color: #ededed;
+}
+
+.subsector_image {
+	box-shadow: 0 10px 40px 0 rgb( 0, 0, 0);
+	object-fit: cover;
+	border-radius: 5px;
+	border: #3a6186 5px solid;
+}
+
+.subsector_description {
+	text-transform: capitalize;
+	width: 50%;
+	font-family: 'Graphik' Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #cfcfcf;
+}
+
+.subsector_description p {
+	margin: 0;
+	padding-top: 3%;
+}
+
+.subsector_description_reverse {
+	text-transform: capitalize;
+	width: 50%;
+	font-family: 'Graphik' Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #cfcfcf;
+	margin-left: auto;
+}
+
+.subsector_description_reverse p {
+	margin: 0;
+	padding-top: 3%;
+}
+
+/*who ewe are*/
+.who_we_are_intro {
+	display: block;
+	text-align: center;
+	padding: 0 2vw;
+
+}
+
+.who_we_are_intro h2 {
+	text-transform: uppercase;
+	font-family: 'OpenSans' Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 42px;
+	margin-bottom: 20px;
+
+}
+
+.who_we_are_intro p {
+	max-width: 50%;
+	margin: 0 auto;
+	font-family: 'Graphik' Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	text-transform: capitalize;
+}
+
+.who_we_are_intro p:nth-child(3) {
+	margin-bottom: 20px;
+}
+
+.who_we_are_bar {
+	width: 200px;
+	height: 5px;
+	margin: 0 auto;
+	background: #89253e;
+	margin-bottom: 50px;
+}
+
+.who_we_are {
+	display: flex;
+	max-width: 100vw;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	margin-bottom: 50px;
+}
+
+.services_wrapper {
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 0 2vw;
+	margin-bottom: 50px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+	grid-template-rows: auto;
+	grid-gap: 2vw;
+	width: 51%;
+}
+.services h3 {
+	text-transform: uppercase;
+	font-family: 'OpenSans' Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.services p {
+	text-transform: capitalize;
+	font-family: 'Graphik' Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.service_image {
+	margin-bottom: 20px;
+}
+
+.delivery_image {
+	margin-bottom: 5px;
+}
+
+.products_bar {
+	width: 200px;
+	height: 5px;
+	margin: 0 auto;
+	background: #89253e;
+	margin-bottom: 50px;
+}
+
+/*products*/
+.products_wrapper_out {
+	background: #ededed;
+}
+
+.product_wrapper {
+	max-width: 1560px;
+	margin: 0 auto;
+}
+
+.products_menu {
+	display: grid;
+	text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-rows: auto;
+	grid-gap: 2vw;
+}
+
+.products_menu a:hover {
+	text-decoration: none;
+}
+
+.products_menu h3 {
+	text-transform: uppercase;
+	font-family: 'OpenSans' Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	color: #000000;
+}
+
