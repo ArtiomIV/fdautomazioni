@@ -27,54 +27,51 @@
 }
 
 @font-face {
-	src: url('../fonts/OpenSans-LightItalic.ttf') format('truetype');
-	font-family: 'Graphik';
+	src: url('../fonts/Karla-VariableFont_wght.ttf') format('truetype');
+	font-family: 'Karla-VariableFont_wght';
 	font-weight: 300;
 	font-style: italic;
 }
 
 body {
 	margin: 0;
-	background: #FAFAFA;;
-
+	background: #FAFAFA;
 }
 
 /*header*/
 .header_wrapper {
 	display: flex;
+	justify-content: center;
 	min-height: 40px;
 	position: sticky; top: 0;
 	background: rgba(29, 43, 100, .902);
 	margin-bottom: 30px;
+	margin-top: 0;
+	z-index: 2;
 }
 
-.container {
-	display: flex;
-	flex: column;
-	max-width:1240px;
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-template-rows: auto;
+	grid-gap: 2vw;
+	max-width: 100%;
 }
 
-.row {
+.head {
 	display: flex;
-	width: 100%;
-	justify-content: space-between;
-}
-
-.col-2 {
-	display: flex;
+	height: 100%;
 	align-items: center;
 	justify-content: center;
 	font-family: 'OpenSans', Helvetica, Arial, sans-serif;
 	font-weight: 500;
-	font-size: 20px;
-	text-transform: uppercase;
 	background-color: transparent;
 	text-decoration: none;
 	color: #ffffff;
 	transition: ease-out color .15s;
 }
 
-.col-2:hover {
+.head:hover {
 	color: rgba(196, 196, 196);
 	text-decoration: none;
 }
@@ -85,29 +82,34 @@ body {
 }
 
 /*intro*/
+
+.intro_wrapper {
+	position: fixed;
+	z-index: 0;
+}
+
 .intro {
 	display: block;
 	text-align: center;
 	padding: 0 2vw;
-}
 
+}
 
 .intro h1 {
 	text-transform: uppercase;
-	font-family: 'OpenSans' Helvetica, Arial, sans-serif;
+	font-family: 'OpenSans', Helvetica, Arial, sans-serif;
 	font-weight: 700;
 	font-size: 42px;
 	margin-bottom: 20px;
-
+	margin-top: 0;
 }
 
 .intro p {
 	max-width: 50%;
 	margin: 0 auto;
-	font-family: 'Graphik' Helvetica, Arial, sans-serif;
+	font-family: 'Karla-VariableFont_wght', Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	font-size: 20px;
-	text-transform: capitalize;
 	margin-bottom: 50px;
 }
 
@@ -120,12 +122,21 @@ body {
 }
 
 /*settori*/
-.sectors_preview h2 {
+.main_section_wrapper{
+	position: relative;
+	width: 100%;
+	top: 350px;
+	z-index: 1;
+	background: #FAFAFA;
+}
+
+.sectors_preview h2 { /*deve essere intro*/
 	text-align: center;
 	text-transform: uppercase;
-	font-family: 'OpenSans' Helvetica, Arial, sans-serif;
+	font-family: 'OpenSans', Helvetica, Arial, sans-serif;
 	font-weight: 600;
 	font-size: 42px;
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
@@ -139,7 +150,7 @@ body {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin-bottom: 50px;
-	background: linear-gradient(-45deg, #FF8008, #89253e, #1D2B64, #1D2B64);
+	background: linear-gradient(-45deg, #FF8008, #FF8008, #89253e, #1D2B64, #1D2B64);
 	background-size: 600% 600%;
 	-webkit-animation: gradient 20s ease-in-out infinite;
 			animation: gradient 20s ease-in-out infinite;
@@ -179,7 +190,6 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	margin-bottom: 20px;
 }
 
 .first_sector {
@@ -192,7 +202,7 @@ body {
 
 .main_sector h3 {
 	text-transform: uppercase;
-	font-family: 'OpenSans' Helvetica, Arial, sans-serif;;
+	font-family: 'OpenSans', Helvetica, Arial, sans-serif;;
 	font-weight: 400;
 	width: 100%;
 	color: #ededed;
@@ -205,7 +215,7 @@ body {
 .subsector_description {
 	text-transform: capitalize;
 	width: 50%;
-	font-family: 'Graphik' Helvetica, Arial, sans-serif;
+	font-family: 'OpenSans', Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	font-size: 19px;
 	color: #cfcfcf;
@@ -219,7 +229,7 @@ body {
 .subsector_description_reverse {
 	text-transform: capitalize;
 	width: 50%;
-	font-family: 'Graphik' Helvetica, Arial, sans-serif;
+	font-family: 'OpenSans', Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	font-size: 19px;
 	color: #cfcfcf;
@@ -236,25 +246,22 @@ body {
 	display: block;
 	text-align: center;
 	padding: 0 2vw;
-
 }
 
 .who_we_are_intro h2 {
 	text-transform: uppercase;
-	font-family: 'OpenSans' Helvetica, Arial, sans-serif;
+	font-family: 'OpenSans', Helvetica, Arial, sans-serif;
 	font-weight: 600;
 	font-size: 42px;
 	margin-bottom: 20px;
-
 }
 
 .who_we_are_intro p {
 	max-width: 50%;
 	margin: 0 auto;
-	font-family: 'Graphik' Helvetica, Arial, sans-serif;
+	font-family: 'Karla-VariableFont_wght', Helvetica, Arial, sans-serif;
 	font-weight: 300;
-	font-size: 18px;
-	text-transform: capitalize;
+	font-size: 20px;
 }
 
 .who_we_are_intro p:nth-child(3) {
@@ -296,14 +303,14 @@ body {
 }
 .services h3 {
 	text-transform: uppercase;
-	font-family: 'OpenSans' Helvetica, Arial, sans-serif;
+	font-family: 'OpenSans', Helvetica, Arial, sans-serif;
 	font-weight: 600;
 	font-size: 24px;
 	margin-bottom: 20px;
 }
 
 .services p {
-	font-family: 'Graphik' Helvetica, Arial, sans-serif;
+	font-family: 'OpenSans', Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	font-size: 18px;
 }
@@ -317,8 +324,39 @@ body {
 	height: 5px;
 	margin: 0 auto;
 	background: #89253e;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 
 /*products*/
+.products_intro {
+	display: block;
+	text-align: center;
+	padding: 0 2vw;
+}
 
+.products_intro h2 {
+	text-transform: uppercase;
+	font-family: 'OpenSans', Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 42px;
+	margin-bottom: 20px;
+}
+
+.products_wrapper {
+	max-width: 1560px;
+	margin: 0 auto;
+	padding: 0 2vw;
+}
+
+.products {
+	display: grid;
+	text-align: center;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-rows: auto;
+	grid-gap: 2vw;
+	width: 100%;
+}
+
+.product_image {
+	border-radius: 50%;
+}
