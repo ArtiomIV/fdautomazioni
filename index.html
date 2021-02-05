@@ -27,7 +27,7 @@
         <div class="central_bar"></div>
         <div class="sectors_preview"><h2>i nostri settori</h2></div>
     </div>
-    <div class="main_section_wrapper">
+    <section class="main_section_wrapper">
         <section class="sectors" id="areas">
             <div class="sectors_wrapper">  
                 <div class="main_sector">
@@ -159,7 +159,7 @@
         </section>
         <section class="subscribe">
             <div class="subscribe_wrapper">
-                <div class="subscribe_text"><h1>Offerte progettazione, nuovi prodotti.</h1></div>
+                <div class="subscribe_text"><h3>Offerte progettazione, nuovi prodotti.</h3></div>
                 <form class="subscribe_form" action="#" method="GET">
                     <input class="subscribe_email_input" type="text" name="email" placeholder="Indirizzo posta elettronica" required>
                     <button class="send_button" type="submit">iscriviti</button>
@@ -174,28 +174,38 @@
                     praesentium maiores, nobis, blanditiis totam at dolores?</p>
                     <div class="contact_bar"></div>
                 </div>
-            </div>
-            <div class="contact_wrapper">
-                <div class="block empty_start"></div>
-                <div class="block contact_us">
-                     <form class="contact_form " action="#" method="GET">
-                    <input class="contact_name info" type="text" name="name" placeholder="Nominativo" required>
-                    <input class="contact_firm info" type="text" name="company_name" placeholder="Azienda" required>
-                    <input class="contact_email info" type="text" name="email" placeholder="Email" required>
-                    <input class="contact_phone info" type="text" name="phone" placeholder="Telefono" required>
-                    <textarea class="contact_request" name="request" cols="30" rows="10" maxlength="1000" placeholder="La tua richiesta" required></textarea>
-                </form>
+                <div class="contact_icons">
+                    <div class="contact_phone icon">
+                        <img class="contact_image" src="img/phone.svg" alt="fotovoltaico" width="100" height="100">
+                        <p>Tel. 0495817344</p>
+                        <p>Fax. 0499750085</p>
+                    </div>
+                    <div class="contact_phone icon">
+                        <img class="contact_image" src="img/email.svg" alt="fotovoltaico" width="100" height="100">
+                        <p>info@fdautomazioni.it</p>
+                        <p>commerciale@fdautomazioni.it</p>
+                    </div>
+                    <div class="contact_phone icon">
+                        <img class="contact_image" src="img/location.svg" alt="fotovoltaico" width="100" height="100">
+                        <p>Via Enrico Mattei 15</p>
+                        <p>Piove di Sacco 35028</p> 
+                    </div>
                 </div>
-                <div class="block contact_info">
-                    <h4>contact info</h4>
-                    <p>Via Enrico Mattei 2/A / Piove di Sacco</p>
-                    <p>Informazioni - info@fdautomazioni.it</p>
-                    <p>Commerciale - info@fdautomazioni.it</p>
-                    <p>Telefono - 0495817344</p>
+                <div class="contact_form_wrapper">
+                    <form class="contact_form " action="#" method="GET">
+                        <input class="contact_name info" type="text" name="name" placeholder="Nominativo" required>
+                        <input class="contact_firm info" type="text" name="company_name" placeholder="Azienda" required>
+                        <input class="contact_email info" type="text" name="email" placeholder="Email" required>
+                        <input class="contact_phone info" type="text" name="phone" placeholder="Telefono" required>
+                        <textarea class="contact_request" name="request" cols="30" rows="10" maxlength="1000" placeholder="La tua richiesta" required></textarea>
+                        <button class="contact_send_button">inviare</button>
+                    </form>
                 </div>
-                <div class="block empty_end"></div>
             </div>
         </section>
-    </div>
+        <section class="footer">
+            <div class="footer_wrapper"></div>
+        </section>
+    </section>
 </body>
 </html>
